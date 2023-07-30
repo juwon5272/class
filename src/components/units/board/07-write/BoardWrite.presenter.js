@@ -15,8 +15,13 @@ export default function BoardWriteUI(props) {
       <br />
       내용 : <input type="text" onChange={props.onChangeContents} />
       <br />
-      <S.BlueButton onClick={props.onClickSubmit}>
-        GRAPHQL-API(동기) 요청하기{" "}
+      <S.BlueButton
+        rrr="20px"
+        qqq="yellow"
+        zzz={props.mycolor}
+        onClick={props.onClickSubmit}
+      >
+        GRAPHQL-API(동기) 요청하기
       </S.BlueButton>
     </>
   );
